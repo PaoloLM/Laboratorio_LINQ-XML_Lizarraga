@@ -1,0 +1,42 @@
+﻿@using Laboratorio_LINQ_XML_Lizarraga.Models;
+@model IEnumerable<Laboratorio_LINQ_XML_Lizarraga.Models.ClsCursos>
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Listar</title>
+</head>
+<body>
+    <div> 
+        <h2>Listar Cursos con XML</h2>
+        <br />
+        <table border="1">
+
+            <tr>
+                <th>Codigo</th>
+                <th>Nombre</th>
+                <th>Horas</th>
+                <th>Creditos</th>
+                <th>Prerequisito</th>
+            </tr>
+
+            @foreach (var c in Model)
+            {
+                <tr>
+                    <td>@Html.DisplayFor(modelItem => c.codigo)</td>
+                    <td>@Html.DisplayFor(modelItem => c.nombre)</td>
+                    <td align="center">@Html.DisplayFor(modelItem => c.horas)</td>
+                    <td align="center">@Html.DisplayFor(modelItem => c.creditos)</td>
+                    <td>@Html.DisplayFor(modelItem => c.prerequisito)</td>
+                </tr>
+            }
+
+        </table>
+    </div>
+</body>
+</html>

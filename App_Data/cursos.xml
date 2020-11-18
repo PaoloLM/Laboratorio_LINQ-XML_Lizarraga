@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<cursos>
+  <curso>
+    <codigo>ING-101</codigo>
+    <nombre>MATEMATICA I</nombre>
+    <horas>6</horas>
+    <creditos>5</creditos>
+    <prerequisito>Ninguno</prerequisito>
+  </curso>
+  <curso>
+    <codigo>ING-102</codigo>
+    <nombre>MATEMATICA BASICA I</nombre>
+    <horas>6</horas>
+    <creditos>5</creditos>
+    <prerequisito>Ninguno</prerequisito>
+  </curso>
+  <curso>
+    <codigo>ING-103</codigo>
+    <nombre>DISEÑO EN INGENIERIA</nombre>
+    <horas>6</horas>
+    <creditos>4</creditos>
+    <prerequisito>Ninguno</prerequisito>
+  </curso>
+  <curso>
+    <codigo>ING-104</codigo>
+    <nombre>COMUNICACION ORAL Y ESCRITA</nombre>
+    <horas>6</horas>
+    <creditos>4</creditos>
+    <prerequisito>Ninguno</prerequisito>
+  </curso>
+  <curso>
+    <codigo>ING-105</codigo>
+    <nombre>METODOLOGIA DEL TRABAJO UNIVERSITARIO</nombre>
+    <horas>4</horas>
+    <creditos>3</creditos>
+    <prerequisito>Ninguno</prerequisito>
+  </curso>
+  <curso>
+    <codigo>SI-171</codigo>
+    <nombre>INTRODUCCION A LA INGENIERIA DE SISTEMAS</nombre>
+    <horas>2</horas>
+    <creditos>2</creditos>
+    <prerequisito>Ninguno</prerequisito>
+  </curso>
+</cursos>

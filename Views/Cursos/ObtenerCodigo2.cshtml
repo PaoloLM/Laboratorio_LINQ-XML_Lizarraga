@@ -1,0 +1,72 @@
+﻿@using Laboratorio_LINQ_XML_Lizarraga.Models;
+@model IEnumerable<Laboratorio_LINQ_XML_Lizarraga.Models.ClsCursos>
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Obtener por Codigo 2</title>
+</head>
+<body>
+    <div>
+        <h2>Listar Cursos 2 con XML</h2>
+
+        @using (Html.BeginForm("ObtenerCodigo2", "Cursos", FormMethod.Post))
+        {
+            <div>
+                @Html.Label("codigo")
+                <div class="col-md-10">
+                    @Html.Editor("codigo")
+                </div>
+            </div>
+
+            <div>
+                <div>
+                    <input type="submit" value="Buscar" />
+                </div>
+            </div>
+
+        }
+
+        <br />
+        <table border="1">
+
+            <tr>
+                <th>Nº</th>
+                <th>Codigo</th>
+                <th>Nombre</th>
+                <th>Horas</th>
+                <th>Creditos</th>
+                <th>Prerequisito</th>
+            </tr>
+
+            @{ int numero = 1;}
+            @foreach (var c in Model)
+            {
+                <tr>
+                    <td>@(numero++)</td>
+                    <td>@Html.DisplayFor(modelItem => c.codigo)</td>
+                    <td>@Html.DisplayFor(modelItem => c.nombre)</td>
+                    <td align="center">@Html.DisplayFor(modelItem => c.horas)</td>
+                    <td align="center">@Html.DisplayFor(modelItem => c.creditos)</td>
+                    <td>@Html.DisplayFor(modelItem => c.prerequisito)</td>
+                </tr>
+            }
+
+            <tr>
+                <td>Cantidad de Registros</td>
+                <td></td>
+                <td align="center"><b>Total</b></td>
+                <td align="center"></td>
+                <td align="center"></td>
+                <td></td>
+            </tr>
+
+        </table>
+    </div>
+</body>
+</html>
